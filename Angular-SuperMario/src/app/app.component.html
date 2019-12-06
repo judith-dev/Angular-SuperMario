@@ -1,0 +1,14 @@
+<div class="container">
+
+  <h1 class="font-weight-light text-center text-lg-left mt-4 mb-0 d-flex">Super Mario Gallery</h1>
+
+  <hr class="mt-2 mb-5">
+  
+  <div   class="row">
+      <div *ngFor="let item of datos"  class="col-lg-4">
+          <img class="img-fluid img-thumbnail" width="50%" height="50%" src="{{item.image}}" alt="{{item.amiiboSeries}}">
+          <h2>{{item.amiiboSeries}}</h2>
+          <br>
+      </div>
+  </div>
+</div>
